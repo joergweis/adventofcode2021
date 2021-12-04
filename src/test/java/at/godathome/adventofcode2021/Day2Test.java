@@ -36,8 +36,18 @@ public class Day2Test {
     @Test
     public void shouldReturnHorizontalTimesDepth() {
         // pentest data
-        assertThat(day2.returnHorizontalTimesDepth(new String[]{"forward 5", "down 5", "forward 8", "up 3", "down 8", "forward 2"})).isEqualTo(10);
+        //assertThat(day2.returnHorizontalTimesDepth(new String[]{"forward 5", "down 5", "forward 8", "up 3", "down 8", "forward 2"})).isEqualTo(10);
 
-        // assertThat(day2.returnFinalDepth(inputData)).isEqualTo(10);
+        assertThat(day2.returnHorizontalTimesDepth(inputData)).isEqualTo(1855814);
+    }
+
+    @Test
+    public void shouldReturnHorizontalTimesDepthWithAim() {
+        // pentest data
+        //assertThat(day2.returnHorizontalTimesDepthWithAim(new String[]{"forward 5", "down 5", "forward 8", "up 3", "down 8", "forward 2"})).isEqualTo(900);
+
+        assertThat(day2.returnHorizontalTimesDepthWithAim(inputData)).isEqualTo(1845455714);
     }
 }
+
+
