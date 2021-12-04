@@ -18,17 +18,12 @@ public class Day1Test {
     private Day1 day1;
 
     @BeforeEach
-    protected void setup() throws NullPointerException {
+    protected void setup() throws NullPointerException, IOException {
         // read input data from resource file
         File f = new File(this.getClass().getResource("./InputDay1.list").getFile());
         Path filePath = f.toPath();
         Charset charset = Charset.defaultCharset();
-        List<String> stringList = null;
-        try {
-            stringList = Files.readAllLines(filePath, charset);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        List<String> stringList = Files.readAllLines(filePath, charset);
         inputData = stringList.toArray(new String[]{});
 
         day1 = new Day1();
