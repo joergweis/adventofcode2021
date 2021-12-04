@@ -19,7 +19,7 @@ public class Day2Test {
     @BeforeEach
     protected void setup() throws NullPointerException {
         // read input data from resource file
-        File f = new File(this.getClass().getResource("./InputDay2.list").getFile());
+        File f = new File(this.getClass().getResource("InputDay2.list").getFile());
         Path filePath = f.toPath();
         Charset charset = Charset.defaultCharset();
         List<String> stringList = null;
