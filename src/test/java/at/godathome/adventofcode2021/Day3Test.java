@@ -19,7 +19,7 @@ public class Day3Test {
     @BeforeEach
     protected void setup() throws NullPointerException {
         // read input data from resource file
-        File f = new File(this.getClass().getResource("/InputDay2.list").getFile());
+        File f = new File(this.getClass().getResource("/InputDay3.list").getFile());
         Path filePath = f.toPath();
         Charset charset = Charset.defaultCharset();
         List<String> stringList = null;
@@ -36,9 +36,9 @@ public class Day3Test {
     @Test
     public void shouldReturnBinaryDiagnostic() {
         // pentest data
-        assertThat(day3.binaryDiagnostic(new String[]{"00100", "11110", "10110", "10111", "10101", "01111", "00111", "11100", "10000", "11001", "00010", "01010"})).isEqualTo(220);
+        //assertThat(day3.binaryDiagnostic(new String[]{"00100", "11110", "10110", "10111", "10101", "01111", "00111", "11100", "10000", "11001", "00010", "01010"})).isEqualTo(198);
 
-        //assertThat(day3.binaryDiagnostic(inputData)).isEqualTo(1855814);
+        assertThat(day3.binaryDiagnostic(inputData)).isEqualTo(1307354);
     }
 }
 
