@@ -36,9 +36,11 @@ public class Day3Test {
     @Test
     public void shouldReturnBinaryDiagnostic() {
         // pentest data
-        //assertThat(day3.binaryDiagnostic(new String[]{"00100", "11110", "10110", "10111", "10101", "01111", "00111", "11100", "10000", "11001", "00010", "01010"})).isEqualTo(198);
+        //assertThat(day3.powerConsumption(new String[]{"00100", "11110", "10110", "10111", "10101", "01111", "00111", "11100", "10000", "11001", "00010", "01010"})).isEqualTo(198);
 
-        assertThat(day3.binaryDiagnostic(inputData)).isEqualTo(1307354);
+        assertThat(day3.lifeSupportRating(new String[]{"00100", "11110", "10110", "10111", "10101", "01111", "00111", "11100", "10000", "11001", "00010", "01010"})).isEqualTo(0);
+
+        // assertThat(day3.powerConsumption(inputData)).isEqualTo(1307354);
     }
 }
 

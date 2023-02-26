@@ -3,7 +3,27 @@ package at.godathome.adventofcode2021;
 public class Day3 {
     int rowCount = 0;
     int valueLenght = 0;
-    protected int binaryDiagnostic(String[] values) {
+
+    protected int lifeSupportRating(String[] values) {
+        // initialize array with length of list and width of value length
+        rowCount = values.length;
+        valueLenght = values[0].length();
+        int[][] valueArray = new int[rowCount][valueLenght];
+        // fill multidimensional array with value
+        valuesToMultiDimensionalArray(valueArray, values);
+        int oxygenGeneratorRating = calcOxygenGeneratorRating(valueArray);
+        int co2ScrubberRating = calcCo2ScrubberRating(valueArray);
+        return oxygenGeneratorRating * co2ScrubberRating;
+    }
+
+    private int calcOxygenGeneratorRating(int[][] valueArray) {
+        return 0;
+    }
+
+    private int calcCo2ScrubberRating(int[][] valueArray) {
+        return 0;
+    }
+    protected int powerConsumption(String[] values) {
 
         // initialize array with length of list and width of value length
         rowCount = values.length;
